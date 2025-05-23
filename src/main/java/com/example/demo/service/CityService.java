@@ -1,7 +1,6 @@
 package com.example.demo.service;
 
 import com.example.demo.Dto.CityDto;
-import com.example.demo.Dto.StateDto;
 import com.example.demo.entity.City;
 import com.example.demo.entity.State;
 import com.example.demo.mapper.CityMapper;

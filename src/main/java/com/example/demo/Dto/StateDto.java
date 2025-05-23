@@ -2,42 +2,18 @@ package com.example.demo.Dto;
 
 import java.util.List;
 
-public class StateDto {
-    private int stateId;
-    private String stateName;
-    private List<CityDto> cities;
-
+public class StateDto extends StateBasicDto {
+    private List<CityBasicDto> cities;
 
     public StateDto(int stateId, String stateName) {
-        this.stateId = stateId;
-        this.stateName = stateName;
+        super(stateId, stateName);
     }
 
-    public StateDto() {
-
-    }
-
-    public List<CityDto> getCities() {
+    public List<CityBasicDto> getCities() {
         return cities;
     }
 
-    public void setCities(List<CityDto> cities) {
+    public void setCities(List<CityBasicDto> cities) {
         this.cities = cities;
-    }
-
-    public int getStateId() {
-        return stateId;
-    }
-
-    public void setStateId(int stateId) {
-        this.stateId = stateId;
-    }
-
-    public String getStateName() {
-        return stateName;
-    }
-
-    public void setStateName(String stateName) {
-        this.stateName = stateName;
     }
 }
